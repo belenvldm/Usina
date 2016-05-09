@@ -1,4 +1,4 @@
-timer = setTimeout('temporizador()', 3000);
+timer = setTimeout('temporizador()', 2000);
 
 function temporizador() {
 	$(document).ready(function() {
