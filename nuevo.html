@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>App Usina</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos/estilos.css">
+	<link rel="stylesheet" href="estilos/font-awesome.min.css">
+	<link rel="stylesheet" href="estilos/jquery.mobile-1.4.5.css">
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/functions.js"></script>
+</head>
+<body>
+	<!-- *... SPLASH ...* -->
+	<a href="#home" data-role="page" class="splash" id="splash" data-transition="fade">
+		<img src="img/splash.jpg" alt="Usina del arte" data-position-to="window">
+	</a>
+	<!-- / *... SPLASH ...* -->
+
+	<!-- *... MENU ...* -->
+	<div class="menu ui-page-theme-b" id="menu" data-role="page" data-transition="slide">
+		<div data-role="header" class="header" id="header" data-position="fixed">
+			<h1>Menu</h1>
+			<div class="flechina ui-popup-arrow-container ui-popup-arrow-b">
+				<div class="ui-popup-arrow ui-body-inherit ui-overlay-shadow"></div>
+			</div>
+		</div>
+
+		<div class="menu_content" data-role="content">
+			<div class="nav">
+				<a href="#" class="ui-btn ui-icon-calendar ui-btn-icon-top">Eventos</a>
+				<a href="#" class="ui-btn ui-icon-user ui-btn-icon-top">Visita Guiada</a>
+				<a href="#" class="ui-btn ui-icon-search ui-btn-icon-top">QR Info</a>
+				<a href="#" class="ui-btn ui-icon-camera ui-btn-icon-top">Obra en Comunidad</a>
+				<a href="#" class="ui-btn ui-icon-location ui-btn-icon-top">Mapa</a>
+			</div>
+		</div>
+
+		<div data-role="footer" class="footer" id="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="arrow-l" class="btn-nav"></a></li>
+					<li><a href="#menu" data-icon="bars" class="btn-nav"></a></li>
+					<li><a href="#" data-icon="gear" class="btn-nav"></a></li>
+					<li><a href="#" data-icon="action" class="btn-nav"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- / *... MENU ...* -->
+
+	<!-- *... HOME ...* -->
+	<div data-role="page" class="home ui-page-theme-b" id="home">
+		<div data-role="header" class="header" id="header" data-position="fixed">
+			<h1>Destacados</h1>
+		</div>
+
+		<div class="content" id="content" data-role="content">
+			<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Buscar" data-inset="true" data-theme="a">
+				<li><a href="#art">El universo de monstriña</a></li>
+				<li><a href="#art">Festival de invierno Geiser</a></li>
+				<li><a href="#art">Tango bs as Festival y Mundial</a></li>
+				<li><a href="#art">Ciclo de floklore</a></li>
+			</ul>
+
+			<div class="menu_home ui-grid-a" id="menu_home">
+				<div onclick="location.href='#art'" class="wrap_event ui-block-a">
+					<img src="img/mons.jpg" alt="" class="events">
+					<div class="txt ui-content">
+						<p class="event_title">El universo de monstriña</p>
+						<p class="date">hasta 09.08</p>
+						<p class="alert">Ultimos dias!</p>
+					</div>
+				</div>
+
+				<div onclick="location.href='#art'" class="wrap_event ui-block-b">
+					<img src="img/catu.jpg" alt="" class="events">
+					<div class="txt ui-content">
+						<p class="event_title">Festival de invierno Geiser</p>
+						<p class="date">hasta 09.08</p>
+					</div>
+				</div>
+
+				<div onclick="location.href='#art'" class="wrap_event ui-block-a">
+					<img src="img/tango.jpg" alt="" class="events">
+					<div class="txt ui-content">
+						<p class="event_title">Tango bs as Festival y Mundial</p>
+						<p class="date">hasta 09.08</p>
+					</div>
+				</div>
+
+				<div onclick="location.href='#art'" class="wrap_event ui-block-b">
+					<img src="img/guitar.jpg" alt="" class="events">
+					<div class="txt ui-content">
+						<p class="event_title">Ciclo de floklore</p>
+						<p class="date">hasta 09.08</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="footer" class="footer" id="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="arrow-l" class="btn-nav"></a></li>
+					<li><a href="#menu" data-icon="bars" class="btn-nav" data-transition="slideup"></a></li>
+					<li><a href="#" data-icon="gear" class="btn-nav"></a></li>
+					<li><a href="#" data-icon="action" class="btn-nav"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- / *... HOME ...* -->
+
+	<!-- *... ARTICULO ...* -->
+	<div data-role="page" class="art ui-page-theme-b" id="art">
+		<div data-role="header" class="header" id="header" data-position="fixed">
+			<h1>Festival de Invierno Geiser</h1>
+		</div>
+
+		<div class="content" id="content" data-role="content">
+			<img class="img_art" src="img/las-pelotas.jpg" alt="">
+			
+			<div class="header_art semibold">
+				Llega la tercera edicion del festival
+				<p class="bajada">06.08 - 08.08</p> <div class="circulin"></div> <p class="bajada_dos">Gratuito</p>
+			</div>
+
+			<div class="content_art">
+				<p class="parrafo1">El sello Geiser se propone celebrar la variedad de bandas que componen sus listas. Los artistas del presente y el futuro, juntos, conformando un festival que promueve la cultura que nace.
+				<br>
+				Mas de 30 bandas, dos escenarios e intervenciones artisticas en tres dias de intensidad y cultura.</p>
+
+				<p class="parrafo2"><span class="semibold">Jueves 6 de Agosto, de 17 a 23 hs.</span>
+				<br>
+				Auditorio Pincipal: Francisca y Los Exploradores, Catupecu Machu, “Madera Microchip” acustico.</p>
+					
+				<p class="parrafo3">Auditorio Geiser: Doby, Dead Berlin, Delta Venus, Coche, Mano, Viva Elastico, Lucio Mantel.</p>
+			</div>
+		</div>
+
+		<div data-role="footer" class="footer" id="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="arrow-l" class="btn-nav"></a></li>
+					<li><a href="#menu" data-icon="bars" class="btn-nav"></a></li>
+					<li><a href="#" data-icon="gear" class="btn-nav"></a></li>
+					<li><a href="#" data-icon="action" class="btn-nav"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- / *... ARTICULO ...* -->
+</body>
+</html>
